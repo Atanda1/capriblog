@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function Posts() {
+export default function Posts() {
   const container = {
     display: "grid",
   };
