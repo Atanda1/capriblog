@@ -3,10 +3,10 @@ import "./App.css";
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
-import { About } from "./About";
-import { Home } from "./Home";
-import { Preview } from "./Preview.jsx";
-import { PostItem } from "./PostItem.island"
+import About from "./About";
+import Home from "./Home";
+import Preview from "./Preview.jsx";
+import PostItem from "./PostItem.island";
 
 export function App() {
   return (

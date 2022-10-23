@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import useSWR from "swr";
 
-export function PostItem() {
+export default function PostItem() {
   let { id } = useParams();
   const url = `https://rickandmortyapi.com/api/character/${id}`;
   const fetcher = async (url: string) =>

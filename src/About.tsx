@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function About() {
+export default function About() {
   return (
     <main>
       <h1>This page is completely static.</h1>
