@@ -14,11 +14,13 @@ export default function PostItem() {
     <main>
       <h1>{data.name}</h1>
       <img src={data.image}></img>
-      <h3>Status: {data.status}</h3>
-      <h5>Species: {data.species}</h5>
-      <h5>Number of episodes featured: {data.episode.length}</h5>
+      <section>Status: {data.status}</section>
+      <section>Species: {data.species}</section>
+      <section>Number of episodes featured: {data.episode.length}</section>
+      <section>
         <h5>Location: {data.location.name}</h5>
         <h5>Gender: {data.gender}</h5>
+      </section>
       <Link to="/">Back Home</Link>
     </main>
   );
