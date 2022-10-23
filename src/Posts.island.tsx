@@ -12,7 +12,8 @@ export default function Posts() {
     <div style={container}>
       {[...Array(10)].map((x, i) => (
         <div style={containerItem}>
-          <Link to={`/post/${i + 1}`}><a>Post/{i + 1}</a></Link>
+          dbdfv
+          {/* <Link to={`/post/${i + 1}`}>Post/{i + 1}</Link> */}
         </div>
       ))}
     </div>
