@@ -1,4 +1,4 @@
-import { Posts } from "./Posts.island.jsx";
+import { Posts } from "./Posts.island";
 
 export function Home() {
 
