@@ -11,19 +11,17 @@ export default function PostItem() {
   if (error) return <div>failed to load</div>;
 
   return (
-    <main>
-      <div>
-        <h1>{data.name}</h1>
-        <img src={data.image}></img>
-        <section>Status: {data.status}</section>
-        <section>Species: {data.species}</section>
-        <section>Number of episodes featured: {data.episode.length}</section>
-        <section>
-          <h5>Location: {data.location.name}</h5>
-          <h5>Gender: {data.gender}</h5>
-        </section>
-        <Link to="/">Back Home</Link>
-      </div>
-    </main>
+    <div>
+      <h1>{data.name}</h1>
+      <img src={data.image}></img>
+      <section>Status: {data.status}</section>
+      <section>Species: {data.species}</section>
+      <section>Number of episodes featured: {data.episode.length}</section>
+      <section>
+        <h5>Location: {data.location.name}</h5>
+        <h5>Gender: {data.gender}</h5>
+      </section>
+      <Link to="/">Back Home</Link>
+    </div>
   );
 }
