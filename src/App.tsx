@@ -10,7 +10,7 @@ import PostItem from "./PostItem.island";
 
 export function App() {
   return (
-    <Suspense>
+    <Suspense fallback={<div>loading...</div>}>
       <Routes>
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
