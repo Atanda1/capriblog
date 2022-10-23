@@ -1,13 +1,6 @@
 import { Posts } from "./Posts.island";
 
 export function Home() {
-
-  const container = {
-    display: "grid",
-  };
-  const containerItem = {
-    paddingBottom: "3rem",
-  };
   return (
     <main>
       <h1>
