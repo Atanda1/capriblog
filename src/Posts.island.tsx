@@ -10,11 +10,14 @@ export default function Posts() {
 
   return (
     <div style={container}>
-      {[...Array(10)].map((x, i) => (
-        <div style={containerItem}>
-          <Link to={`/post/${i + 1}`}>Post/{i + 1}</Link>
-        </div>
-      ))}
+      {[...Array(10)].map((x, i) => {
+        const link = `/post/${i + 1}`
+        return (
+          <div style={containerItem}>
+            <Link to={link}>Post/{i + 1}</Link>
+          </div>
+        );
+      })}
     </div>
   );
 }
