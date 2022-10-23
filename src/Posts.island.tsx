@@ -13,7 +13,7 @@ export default function Posts() {
       {[...Array(10)].map((x, i) => (
         <div style={containerItem}>
           <Link to={`/post/${i + 1}`}>
-            <h4>Post/{i + 1}</h4>
+            Post/{i + 1}
           </Link>
         </div>
       ))}
