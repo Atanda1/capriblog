@@ -1,15 +1,12 @@
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import useSWR from "swr";
-import fetch from "unfetch";
+
 export default function PostItem() {
   let { id } = useParams();
   const url = `https://rickandmortyapi.com/api/character/${id}`;
-  // const fetcher = (url: string) =>
-  //   axios.get(url).then((res: any) => res.data);
-  const fetcher = (url: string) => fetch(url).then((r) => r.json());
-
-  //const fetcher = ([...args]) => fetch([...args]).then((res) => res.json());
+  const fetcher = async (url: string) =>
+axios.get(url).then((res: any) => res.data);
   const { data, error } = useSWR(url, fetcher, { suspense: true });
   if (error) return <div>failed to load</div>;
 
