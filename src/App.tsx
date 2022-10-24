@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Preview from "./Preview.jsx";
-import PostItem from "./PostItem.island";
+import PostItem from "./PostItem.lagoon";
 
 export function App() {
   return (
