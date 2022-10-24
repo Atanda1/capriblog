@@ -5,7 +5,7 @@ import useSWR from "swr";
 export default function PostItem() {
   let { id } = useParams();
   const url = `https://rickandmortyapi.com/api/character/${id}`;
-  const fetcher = async (url: string) =>
+  const fetcher = (url: string) =>
 axios.get(url).then((res: any) => res.data);
   const { data, error } = useSWR(url, fetcher, { suspense: true });
   if (error) return <div>failed to load</div>;
