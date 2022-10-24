@@ -1,4 +1,4 @@
-import Posts from "./Posts.island";
+import Posts from "./Posts.lagoon";
 
 export default function Home() {
   return (
